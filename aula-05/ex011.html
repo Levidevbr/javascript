@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+</head>
+<body>
+    <h1>Exercicio de estrangeiro</h1>
+    Eu estou vivendo no brasil mas sou <input type="text" name="txt" id="txtlg">
+    <input type="button" value="Enviar" onclick="calcular()">
+    <div id="txtresul"></div>
+    <script>
+        function calcular(){
+            var txtv = window.document.getElementById('txtlg')
+            var txt = String(txtv.value)
+            var res = window.document.getElementById('txtresul')
+            if (txt == `Brasil`)
+            res.innerHTML = `Então sou Brasileira`
+            else {
+                res.innerHTML = `Então sou Estrangeiro`
+            }
+        }
+    </script>
+</body>
+</html>
