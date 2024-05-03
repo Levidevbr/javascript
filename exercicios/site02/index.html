@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site 02</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="titulo">
+            <h1>Verificador de Idade</h1>
+        </div>
+        <div id="caixa">
+            <div class="cx-dresc">
+                <strong>Ano do nascimento:</strong> <input type="number" name="div-ano" id="div-ano" max="2025">
+            </div>
+            <div id="div-sx" class="cx-dresc">
+                <strong>Sexo:</strong> 
+                <input type="radio" name="opcoes" id="opcao1">
+                <label for="opcao1">Masculino</label>
+                <input type="radio" name="opcoes" id="opcao2">
+                <label for="opcao2">Feminino</label>
+            </div>
+            <div id="div-enviar" class="cx-dresc">
+                <input type="button" value="Verificar" onclick="clicar()">
+            </div>
+            <div class="cx-dresc">
+                <p id="div-img">Preencha os dados acima para ver os resultados!</p>
+            </div>
+        </div>
+        <div id="descricao">
+            <p>
+                &copy;Desenvolvido por <a href="https://github.com/Levidevbr"><strong>Levidevbr</strong></a>
+            </p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
